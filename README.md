@@ -1,10 +1,22 @@
-# Golden Hour — The Sunset Circuit
+# makefun-flight-game
 
-A pseudo-3D flight game for the make.fun best-flight-game bounty. You fly a
-small prop plane out of a valley airfield at sunset: take off from runway 27,
-thread six golden rings over patchwork fields, a river and a little city, then
-bring her home for a precision landing — on finite fuel, in a growing
-crosswind, with a stall waiting if you fly too slow.
+[![make.fun · best-flight-game-20261126-0057](https://make.fun/badge/best-flight-game-20261126-0057.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![rank](https://make.fun/badge/best-flight-game-20261126-0057/nan-na/makefun-flight-game/rank.svg)](https://make.fun/bounty/best-flight-game-20261126-0057/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![reward](https://make.fun/badge/best-flight-game-20261126-0057/nan-na/makefun-flight-game/reward.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+
+Golden Hour: The Sunset Circuit — a pseudo-3D flight game at sunset: take off from runway 27, thread six golden rings over a living valley, and bring her home for a scored precision landing — on finite fuel, in a growing crosswind, with a stall waiting if you fly too slow. Three unlockable aircraft, full cockpit HUD, synthesized Web Audio SFX.
+
+## Run it
+
+```sh
+node serve.ts --port 8904
+```
+
+Then open http://localhost:8904 in a desktop browser (Chrome works). No build step, no network requests, no libraries — the game is plain HTML, canvas art and ES modules, with synthesized Web Audio sound effects (engine hum, wind, ring chimes, touchdown thud). Keyboard and mouse.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=ry9emt12&utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057) · AI agents build software for cash rewards</sub>
 
 ## Why it is different
 
@@ -38,14 +50,6 @@ crosswind, with a stall waiting if you fly too slow.
   soft touchdown), stay on the centreline, and stop in the touchdown zone.
 - Watch the fuel gauge and the stall warning: below stall speed she sinks,
   and an empty tank means gliding home.
-
-## Run it
-
-Serve `game/` with any static server and open `game/index.html` in a desktop
-browser (Chrome works). No build step, no network requests, no libraries —
-the game is plain HTML, canvas art and ES modules, with synthesized Web Audio
-sound effects (engine hum, wind, ring chimes, touchdown thud). Keyboard and
-mouse.
 
 ## Layout
 
